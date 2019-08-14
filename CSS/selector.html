@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      :link{color:#000}
+      :visited{color:#f00}
+      :active{color: green}
+      :hover{color:#ff0}
+      .name:after{
+        content:"님 환영합니다."
+      }
+      .name:before{
+        content:"안녕하세요."
+      }
+      input[type="text"]{color:red}
+      a[href=^"text"]{
+        color:red
+      }
+
+      #menu>ul>li:nth-child(even) {border:1px #f00 solid;}
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>menu item 01
+          <ul>
+            <li><a href="http://www.naver.com">hello world</a></li>
+            <li class="sub on">menu item 02</li>
+            <li>menu item 03</li>
+            <li class="sub">menu item 04</li>
+            <li class="sub">menu item 05</li>
+          </ul>
+        </li>
+        <li id="target"><input type="button" value="Hello World"></li>
+        <li><input type="text" title="this is form."></li>
+        <li><input type="text" title="this is form."></li>
+        <li><span class="name">곽현주</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
