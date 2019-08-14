@@ -6,73 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    .wrapper{
-    width:900px;
-    height:540px;
+    ul{margin: 0; padding:0; list-style: none;}
+    .wrapper{ width:900px; height:540px; margin: 0 auto; background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat; padding: 0 50; }
+    .header{ height:111px; padding-top:20px; margin: 0 30px; box-sizing:border-box; border-bottom: 2px #000 solid; }
+      .logo{ width: 260px; height:55px; float: left; }
+      .banner{ width: 468px; height: 60px; float: right; margin-top: 20px; }
 
-    margin: 0 auto;
-    background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat;
-    padding: 0 50;
-    }
+      .button-group{ clear: left; }
+      .button-group .subscribe{ width: 66px; height: 22px; font-size: 0; border: 0; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat; vertical-align:middle; }
+      .button-group .user-comment{ width: 75px; height: 22px; font-size: 0; display:inline-block; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -293px -174px no-repeat; vertical-align:middle; }
+      .button-group .sns-export{ width:28px; height:22px; font-size:0; border: 0; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat; vertical-align:middle; }
+      .button-group .write{ font-size:12px; }
 
-    .header{
-      height:111px;
-      padding-top:20px;
-      margin: 0 30px;
+    .contents{ width: auto; height:380px; outline:1px #f00 solid; margin: 20px 30px 0; position: relative; }
+      .leftwrap{ outline:1px #f00 solid; position:absolute; left:0; top:0; right:360px; bottom:0;}
+        .leftwrap .box1 {outline:1px #f00 solid; height: 190px;}
+          .leftwrap .article1{position: relative; }
+          .leftwrap .article1 h2 {margin:0 0 15px 0 ; padding-left:16px; font-size:24px;}
+          .leftwrap .article1 .article1-thumbnail{width:221px; height:122px; outline:1px #f00 solid;}
+          .leftwrap .article1 p{font-size:12px; line-height: 21px; width: 248px; position:absolute; right: 0; top:33px;}
+        .leftwrap .box2 {outline:1px #f00 solid; height: 190px;}
+          .leftwrap .article2{padding:10px 8px 0;}
+          .leftwrap .article2 li{width:134px; outline:1px #f00 solid; float:left; margin-left: 30px;}
+          .leftwrap .article2 li:first-child{margin-left: 0;}
+          .leftwrap .article2 .article2-thumnail{overflow: hidden; height: 81px;}
+          .leftwrap .article2 .article2-thumnail img {width:100%;}
+          .leftwrap .article2 strong,
+          .leftwrap .article2 p{font-size: 13px; line-height: 14px; margin:5px 0;}
 
-      box-sizing:border-box;
-      border-bottom: 2px #000 solid;
-      }
+        .rightwrap{outline:1px #f00 solid; position:absolute; right:0; top:0; left:480px; bottom:0;}
+        .rightwrap .box1{outline:1px #f00 solid; margin-left: 20px;}
+          .rightwrap .article1{padding:5px 0 5px 20px; position:relative; }
+          .rightwrap .article1 li{width:220px; outline:1px #f00 solid; float: left; margin-bottom:10px; }
+          .rightwrap .article1 li:last-child{margin-bottom: 0;}
+          .rightwrap .article1 .article1-thumnail{overflow: hidden; outline:1px #f00 solid; }
+          .rightwrap .article1 .article1-thumnail img {float:left; margin-right: 10px;}
+          .rightwrap .article1 p{margin:0; font-size:13px; }
 
-      .logo{
-        width: 260px;
-        height:55px;
 
-        float: left;
-      }
 
-      .banner{
-        width: 468px;
-        height: 60px;
+        .rightwrap .box2{outline:1px #f00 solid; height: 370px;}
 
-        float: right;
-        margin-top: 20px;
-      }
-
-      .button-group{
-
-        clear: left;
-      }
-      .button-group .subscribe{
-        width: 66px;
-        height: 22px;
-
-        font-size: 0;
-        border: 0;
-        background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat;
-        vertical-align:middle;
-      }
-      .button-group .user-comment{
-        display:inline-block;
-        width: 75px;
-        height: 22px;
-
-        font-size: 0;
-        background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -293px -174px no-repeat;
-        vertical-align:middle;
-      }
-      .button-group .sns-export{
-        width:28px;
-        height:22px;
-
-        font-size:0;
-        border: 0;
-        background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;
-        vertical-align:middle;
-      }
-      .button-group .write{
-        font-size:12px;
-      }
 
   </style>
 </head>
@@ -80,7 +54,7 @@
   <div class="wrapper">
     <div class="header">
       <div class="logo">
-      <img src="https://ssl.pstatic.net/static/newsstand/up/2014/0708/nsd11654791.gif">
+      <img src="https://ssl.pstatic.net/static/newsstand/up/2014/0708/nsd11654791.gif">.
       </div>
 
         <div class="banner">
@@ -93,7 +67,92 @@
         <span class="write">08-12 00:02 편집</span>
       </div>
     </div>
-  </div
+
+    <div class="contents">
+      <div class="leftwrap">
+        <div class="box1">
+          <div class="article1">
+            <h2>국채보상운동 출발시기 알려진 것보다 ...</h2>
+            <div class="article1-thumbnail">
+              <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/001.jpg" alt="">
+            </div>
+            <p>경주 최부자집 창고에서 일제강점기 전후의 보물급 문서 수만건이 쏟아져 나왔다. 경주최부자민족정신선양회 최창호 이사가 문서가 출토된 궤짝을 열어보고 있다.
+            국채보상운동의 출발 시기가 지금까지 알려진 것보다 더 빨랐던 것으로 보여지는 서책과 경주 최부자집</p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="article2">
+            <ul>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/002.jpg" alt="">
+                </div>
+                <strong>경주국채보상운동 역사 최부자집 창</strong>
+                <p>국채보상운동 참가를 비롯한 경주 독</p>
+              </li>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/153350/004.jpg" alt="">
+                </div>
+                <strong>80여명 사상자 낸 대보 사우나 화재,</strong>
+                <p>지난 2월 19일 화재가 발생한 대보사우</p>
+              </li>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/004.jpg" alt="">
+                </div>
+                <strong>대구 남구 이천동 테마거리 조성 공</strong>
+                <p>대구 남구청이 사업비 18억 원을 들여</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rightwrap">
+        <div class="box1">
+          <div class="article1">
+          <ul>
+            <li>
+              <div class="article1-thumnail">
+                <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/153350/005.jpg" alt="">
+              </div>
+              <p><strong>무신사 내셔널지오그래픽 데이, 일주</strong>
+              사진=무신사 내셔널지오그래픽 데이 홈페이지 오늘(13일) 포털사이트 실</p>
+            </li>
+            <li>
+              <div class="article1-thumnail">
+                <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/153350/006.jpg" alt="">
+              </div>
+              <p><strong>변론 재차 맡았던 고유정 변호사 결국</strong>
+              사진=연합뉴스 오늘(13일) CBS노컷뉴스에 따르면 '고유정 사건' 변론</p>
+            </li>
+            <li>
+              <div class="article1-thumnail">
+                <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/153350/007.jpg" alt="">
+              </div>
+              <p> <strong>오달수 독립영화 '요시찰'로 1년반만</strong>
+              사진=연합뉴스 배우 오달수가 독립영화 '요시찰'로 스크린 컴백을</p>
+            </li>
+          </ul>
+          </div>
+        <div class="box2">
+          <div class="article2">
+            <ul>
+
+                <li>'나노메딕스' 사내이사로 영입된 '짐 로저스'</li>
+                <li>'DHC'가 뱉은 망언에 올리브 버진 오일 클렌징</li>
+                <li>솜혜인, 양성애자 커밍아웃 후 계속되는 추측</li>
+                <li>세상읽기…나는 의심한다</li>
+                <li>아침논단…이종 간 융합을 보고 배워라</li>
+                <li>세상읽기…그것은 보수가 아니다</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
