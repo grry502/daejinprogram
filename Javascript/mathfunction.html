@@ -1,0 +1,21 @@
+<script>
+var rdmGen = Math.random() * 10;
+rdmGen = Math.floor(rdmGen);
+var AnswerNum = rdmGen % 2;
+var Answer = null;
+
+if(AnswerNum == 0){
+  Answer =  "짝"}
+else if(AnswerNum == 1){
+  Answer = "홀"
+}
+var userAn = prompt('정답을 작성하세요')
+
+if(userAn == Answer){
+  console.log('정답입니다!')}
+
+  else if(userAn != Answer) {
+  console.log("틀렸어요. 정답은 "+Anwser+" 입니다")
+  }
+
+</script>
