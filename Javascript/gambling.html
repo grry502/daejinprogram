@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var Answer = null;
+    var el_write;
+    var dealerArr = [];
+    var userArr = [];
+    var money;
+
+    function sherple(){
+        var rdmGen = Math.random() * 10;
+        rdmGen = Math.floor(rdmGen);
+
+        var AnswerNum = rdmGen % 2;
+
+        if(AnswerNum == 0){
+          Answer = "짝"
+        }else if(AnswerNum == 1){
+          Answer = "홀"
+        }
+        console.log("접기가 완료되었습니다.")
+    }
+
+    function answer(){
+      var userAn = prompt('정답을 작성하세요')
+      if(userAn == Answer){
+        document.getElementById('write').innerHTML = "<span>정답입니다.</span>";
+        userArr.push(money)
+        document.getElementById('dealer').innerHTML = dealerArr;
+      }else if(userAn != Answer){
+        document.getElementById('write').innerHTML = "틀렸어요. 정답은 "+Answer+" 입니다.";
+        dealerArr.push(money)
+        document.getElementById('bank').innerHTML = dealerArr;
+      }
+    }
+
+    function moneyCall(){
+      money = prompt('얼마?');
+      document.getElementById('bank').innerHTML = money +"원"
+    }
+  </script>
+</head>
+<body>
+   <button type="button" onclick="moneyCall()">판돈걸기</button>
+   <button onclick="sherple()">섞어</button>
+   <button onclick="answer()">맞춰</button>
+    <h1>Status</h1>
+    <div id="write"></div>
+    <div>판돈:</div>
+    <div id="bank"></div>
+    <div>딜러:</div>
+    <div id="dealer"></div>
+    <div id="나"></div>
+    <div id="user"></div>
+</body>
+</html>
