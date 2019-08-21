@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery3.4.1.js" charset="UTF-8"></script>
+  <script>
+    $(document).ready(function(){
+      var target = $('li:eq(0)');
+      target.css('border','1px #F00 solid')
+    })
+  </script>
+</head>
+<body>
+  <ul>
+    <li>this is tag</li>
+    <li class="list-item">this is class</li>
+    <li id="last-item">this is id</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery3.4.1.js" charset="UTF-8"></script>
+  <style>
+  .wrapper{
+    width: 700px;
+    height: 2000px;
+    border: 1px #f00 solid;
+    margin: 0 auto;
+  }
+  .f-banner{
+    width: 100px;
+    height: 300px;
+    border: 1px #f00 solid;
+    position: absolute;
+    left: 50%;
+    margin-left:360px;
+  }
+  </style>
+  <script>
+  //문서가     준비되면   실행해
+  $(document).ready(function(){
+  //윈도우에 스크롤이벤트가 발생되면 실행해
+    $(window).scroll(function(){
+    //윈도우에 스크롤 탑값을 알아와서 sct에 넣어.
+      var sct = $(this).scrollTop();
+    //f-banner에 애니메이션을 넣어.
+      $('.f-banner').stop().animate({
+      //높이를 sct만큼 움직여.
+        top:sct
+      //1초동안
+      },1000);
+    });
+  })
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="f-banner">
+    fly
+  </div>
+  <div class="wrapper">
+
+  </div>
+</body>
+</html>
