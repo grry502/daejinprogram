@@ -1,0 +1,39 @@
+html,body{
+  height:100%
+}
+body{
+  margin:0;
+}
+.gnb{
+  width:100%;
+  height:70px;
+  position:absolute;
+  top:0;
+  box-sizing:border-box;
+  padding:14px 30px;
+  z-index:100;
+}
+.menu{
+  font-size:50px;
+  color:#FFF;
+}
+.cover-view{
+  height:100%;
+  background-image: url(cover-view.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  position:relative;
+}
+.cover-view h1{
+  margin:0;
+  position: absolute;
+  bottom: 50px;
+  color: #FFF;
+  font-family:'Nanum Myeongjo', serif;
+  font-size:50px;
+  margin:0 50px;
+}
+.container{
+  height: 3000px;
+}
